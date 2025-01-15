@@ -61,7 +61,7 @@ export const Header = () => {
           <div className="w-[35px] ">
             <img
               className="w-full"
-              src="../public/images/pngwing.png"
+              src="https://raw.githubusercontent.com/Ajay-Devkate/swiggy-ui-clone/refs/heads/main/swiggy-ui/public/images/pngwing.png"
               alt="Brand logo"
             />
           </div>
