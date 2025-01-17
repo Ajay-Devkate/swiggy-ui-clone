@@ -11,6 +11,8 @@ import { FaCartShopping } from "react-icons/fa6";
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
 
+  const btnStyle = "button border mb-2 py-2 px-3 rounded-md border-black hover:scale-90 duration-300 hover:text-[#ff5200]";
+
   const links = [
     {
       title: "Offers",
@@ -43,7 +45,7 @@ export const Header = () => {
         }}
       >
         <div
-          className="w-[400px] bg-white h-full absolute duration-[500ms]"
+          className=" w-full  md:w-[500px] bg-white h-full absolute duration-[500ms]"
           onClick={(e) => e.stopPropagation()}
           style={{
             left: toggle ? "0%" : "-100%",
@@ -53,6 +55,10 @@ export const Header = () => {
             className=" ml-[92%] absolute top-4"
             onClick={() => setToggle(false)}
           />
+          <div className=" h-full flex flex-col justify-center items-center text-2xl font-bold">
+            <button className={btnStyle} >Sign In</button>
+            <button className={btnStyle} >Log In</button>
+          </div>
         </div>
       </div>
 

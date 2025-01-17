@@ -2,6 +2,7 @@ import "./App.css";
 import { Header } from "./components/Header";
 import Category from "./components/Category";
 import { TopRest } from "./components/TopRest";
+import Footer from "./components/Footer"; 
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Category />
       <TopRest />
+      <Footer />
     </>
   );
 }
